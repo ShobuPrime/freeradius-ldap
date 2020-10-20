@@ -1,7 +1,6 @@
 FROM centos:latest
 MAINTAINER Anthony N. Dardano III <adardano@fau.edu>
 
-RUN chmod +x /init
 ENTRYPOINT [ "/init" ]
 
 # RADIUS Authentication Messages
@@ -23,3 +22,4 @@ RUN curl -L https://github.com/krallin/tini/releases/download/${TINI_VERSION}/ti
 # Copy our configuration
 COPY ldap /etc/raddb/mods-available/
 COPY init /
+RUN chmod +x /init
