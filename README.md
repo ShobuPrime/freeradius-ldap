@@ -29,7 +29,7 @@ Example Docker Compose Configuration
 ====================================
 
     radius:
-      image: irasnyd/freeradius-ldap:latest
+      image: shobuprime/freeradius-ldap:latest
       ports:
         - "1812:1812/udp"
         - "1813:1813/udp"
