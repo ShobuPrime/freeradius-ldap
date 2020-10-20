@@ -1,4 +1,4 @@
-FROM centos:8
+FROM centos:latest
 MAINTAINER Anthony N. Dardano III <adardano@fau.edu>
 
 ENTRYPOINT [ "/init" ]
