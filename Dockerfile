@@ -1,6 +1,7 @@
 FROM centos:latest
 MAINTAINER Anthony N. Dardano III <adardano@fau.edu>
 
+RUN chmod +x ./init
 ENTRYPOINT [ "/init" ]
 
 # RADIUS Authentication Messages
